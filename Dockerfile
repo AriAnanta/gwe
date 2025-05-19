@@ -4,11 +4,11 @@ FROM python:3.11-slim
 # Set working directory untuk containernya
 WORKDIR /app
 
-# Copy file requirements dan install dependencies
+# Copy file requirements dan install dependenciesnya di file requirement
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-# Copy hanya file yang diperlukan
+# Copy file yang diperlukan aja bro
 COPY ObesityDetection.py .
 COPY logistic_model.pkl .
 COPY scaler.pkl .
