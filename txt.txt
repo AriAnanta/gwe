@@ -1,0 +1,2 @@
+docker build -t namaimage .
+docker run -p 8501:8501 namaimage
